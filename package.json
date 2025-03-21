@@ -1,22 +1,32 @@
 {
   "name": "value-stores",
-  "module": "src/index.ts",
+  "module": "out/index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "typescript": "^5.7.3"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To install dependencies:",
-  "main": "src/index.js",
-  "dependencies": {
-    "typescript": "^5.7.3"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ./tsconfig.json",
+    "prepack": "npm run build"
   },
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./out/index.js",
+      "types": "./out/index.d.ts"
+    }
+  },
+  "files": [
+    "out"
+  ],
   "author": "Catargo",
   "license": "MIT"
 }

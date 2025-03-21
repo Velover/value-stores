@@ -1,5 +1,5 @@
-import type { ListenersMap } from "./ListenersMap";
-import type { Types } from "./Types";
+import type { ListenersMap } from "./ListenersMap.js";
+import type { Types } from "./Types.js";
 
 export namespace Store {
   export const Capturing = {

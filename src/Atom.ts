@@ -1,6 +1,6 @@
-import { ListenersMap } from "./ListenersMap";
-import { Store } from "./Store";
-import type { Types } from "./Types";
+import { ListenersMap } from "./ListenersMap.js";
+import { Store } from "./Store.js";
+import type { Types } from "./Types.js";
 
 export function Atom<T>(): Types.Atom<T | undefined>;
 export function Atom<T>(state: T): Types.Atom<T>;

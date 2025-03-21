@@ -1,6 +1,6 @@
-import { Atom } from "./Atom";
-import { Store } from "./Store";
-import type { Types } from "./Types";
+import { Atom } from "./Atom.js";
+import { Store } from "./Store.js";
+import type { Types } from "./Types.js";
 
 export function Computed<T>(callback: Types.Selector<T>): Types.Selector<T> {
   let [dependencies, state] = Store.Capture(callback);

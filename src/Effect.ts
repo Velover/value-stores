@@ -1,5 +1,5 @@
-import { Store } from "./Store";
-import type { Types } from "./Types";
+import { Store } from "./Store.js";
+import type { Types } from "./Types.js";
 
 export function Effect(
   callback: (cleanup: Types.CleanUp) => Types.CleanUp | void

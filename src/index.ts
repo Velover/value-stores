@@ -1,9 +1,9 @@
-import { Atom } from "./Atom";
-import { Computed } from "./Computed";
-import { Effect } from "./Effect";
-import { Store } from "./Store";
-import { Subscribe } from "./Subscribe";
-import type { Types } from "./Types";
+import { Atom } from "./Atom.js";
+import { Computed } from "./Computed.js";
+import { Effect } from "./Effect.js";
+import { Store } from "./Store.js";
+import { Subscribe } from "./Subscribe.js";
+import type { Types } from "./Types.js";
 
 export type Atom<T> = Types.Atom<T>;
 export const atom = Atom;
