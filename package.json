@@ -10,11 +10,12 @@
     "typescript": "^5.7.3"
   },
   "version": "1.0.1",
-  "description": "To install dependencies:",
+  "description": "A lightweight, reactive state management library for TypeScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p ./tsconfig.json",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "npm run build"
   },
   "main": "out/index.js",
   "types": "out/index.d.ts",
@@ -27,6 +28,22 @@
   "files": [
     "out"
   ],
+  "keywords": [
+    "state-management",
+    "reactive",
+    "atom",
+    "computed",
+    "effect",
+    "typescript"
+  ],
   "author": "Catargo",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Velover/value-stores"
+  },
+  "homepage": "https://github.com/Velover/value-stores#readme",
+  "bugs": {
+    "url": "https://github.com/Velover/value-stores/issues"
+  }
 }
